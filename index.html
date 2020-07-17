@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eBay Price Summary</title>
+</head>
+<body>
+    <script src="scraping.js"></script>
+    <div>
+        <h1>
+            eBay Price Summary
+        </h1>
+    </div>
+    <button>Login</button>
+    <input type="file" id="parameter_file">
+    <br>
+    <br>
+    <button id="start" onclick="get_api_key()">GO</button>
+    <div>
+        <h2>
+           Output
+        </h2>
+        <div id="output">
+            <p id="output_text">
+                Hello, world!
+            </p>
+            <button id="output_download" onclick="download_output()">Download</button>
+        </div>
+    </div>
+</body>
+</html>
