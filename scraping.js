@@ -2,7 +2,7 @@
 let searchParameters;
 
 function call_function(function_name) {
-    fetch("k" + function_name)
+    fetch("https://ebayscraper.netlify.app/.netlify/functions/" + function_name)
         .then(response => response.text())
         .then(result => console.log(result))
         .catch(err => console.log('Error', err))
