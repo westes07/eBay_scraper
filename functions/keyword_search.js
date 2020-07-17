@@ -1,4 +1,4 @@
-export function handler(event, context, callback) {
+exports.handler = function(event, context, callback) {
     fetch("https://ebayscraper.netlify.app/.netlify/functions/get_api_key")
         .then(response => response.text())
         .then(result => console.log(result))
@@ -26,5 +26,5 @@ export function handler(event, context, callback) {
         statusCode: 200,
         body: search_result
     })
-}
+};
 

@@ -1,5 +1,5 @@
 
-export function handler(event, context, callback){
+exports.handler = function(event, context, callback){
     let key = "Error: No data received";
     let myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
