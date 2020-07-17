@@ -1,8 +1,10 @@
 exports.handler = function(event, context, callback) {
-    fetch("https://ebayscraper.netlify.app/.netlify/functions/get_api_key")
-        .then(response => response.text())
-        .then(result => console.log(result))
-        .catch(err => console.log('Error', err));
+    // fetch("https://ebayscraper.netlify.app/.netlify/functions/get_api_key")
+    //     .then(response => response.text())
+    //     .then(result => console.log(result))
+    //     .catch(err => console.log('Error', err));
+
+    call_function("get_api_key");
 
     let apiKey = process.env.apiKey;
     let search_result;
