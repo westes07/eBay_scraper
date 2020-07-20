@@ -24,7 +24,7 @@ function get_api_key(){
     process.env.apiKey = key;
 }
 
-export function handler(event, context, callback) {
+exports.handler = function(event, context, callback) {
     get_api_key();
 
     let apiKey = process.env.apiKey;
