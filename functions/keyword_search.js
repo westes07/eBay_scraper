@@ -24,7 +24,7 @@ function get_api_key(){
     process.env.apiKey = key;
 }
 
-exports.handler = function(event, context, callback) {
+export function handler(event, context, callback) {
     get_api_key();
 
     let apiKey = process.env.apiKey;
@@ -49,5 +49,5 @@ exports.handler = function(event, context, callback) {
         statusCode: 200,
         body: search_result
     })
-};
+}
 
